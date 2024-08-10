@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+}
+body{
+ 
+    background: rgb(130, 64, 160);
+    color: rgb(45, 1, 53) ;
+  
+  } 
+  section {
+    background-color: rgb(202, 140, 237);
+    margin: 550px;
+    margin-top: 150px;
+    text-align: center;
+    border:5px solid rgb(187, 118, 212)  ; max-width: 20%;
+    border-radius: 10px;
+    box-shadow: 10px 20px rgb(45, 1, 53);
+  }
+  button{
+    margin-top: 2%;
+    background-color: rgb(187, 118, 212);
+    border: solid   rgb(45, 1, 53);
+  }
+  input{
+    background-color: rgb(187, 118, 212);
+  }

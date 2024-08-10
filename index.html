@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--cabeça do html, aqui fica a parte mais sistematica, ou que não vão aparecer diretamente na pagina-->
+    <meta charset="pt-BR"><!--charset: linguagem que a pagina(cód) vai seguir-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ajuda a pagina a ficar bem em diferentes tipo de telas e orientações-->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <!-- link do css, para conseguir stilizar a pagina -->
+   
+
+    <title>Tabuada</title><!--titulo exibido na guia de pesquisa de links da web(browser)-->
+</head>
+   <body><!--corpo do html, onde irar aparecer as informações que você colocar , como div's paragrafos etc...-->
+    <section id="corpo"><!--o section é usado para criar seções dentro do html como div's-->
+    <H1>TABUADA</H1><!--h1 para definir o tamanho do titulo (a importancia de titulo de h1 como "mais"importante)-->
+    Tabuada do numero:
+    <input id="num" type="number"><br/><!---->
+    <button onclick="tabuada()">Exibir</button><br/>
+    
+    <div id='resposta'></div>
+    </section>
+</body>
+   <script >
+   function tabuada(){
+    var num = parseInt(document.getElementById("num").value);//var é uma variavel num(da tag input) é o para puxar e adicionar uma valor ,ou uma função a ele .persenInt usado para converter para numeros inteiros ou uma string(palavras sem ser numeros)em numero . document chama o documento que você esta fznd .getelenmentby chama o ID ,NAME etc que vc quer value permite modificar os elementos de entrada (document.getElementById("num"))  que seria o "num"
+    var resposta= document.getElementById('resposta');//chamou o id resposta 
+    var tabuada='';//valor da tabuada esta vazio pois apresentara a soma (multiplicação) dos numeros
+    for(var count=1; count<=10 ; count++)//for é usado para laços de repetição conte (contar) e ira exibir valores de menor que 10 ate 0 
+    tabuada +=num+"x" +count+ "="+ num*count+"<br/>"// num (numero)+"x"(valor que sera exibido) +count+ (valor do outro numero) "="(o valor de num mais ou multiplicado por count sera igual a um determinado numero)+ num*(multiplicação)count+
+
+    resposta.innerHTML=tabuada;// a resposta ,innerhtml, substitui o conteudo do html, 
+   }
+    
+  
+
+   </script>
+
+</html>
